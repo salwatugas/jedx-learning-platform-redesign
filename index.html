@@ -1,26 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alur — ruang belajar mandiri untuk membangun kebiasaan belajar yang konsisten, satu kelas pada satu waktu." />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>JedX Learning Platform</title>
+    <title>Alur — Ruang Belajar Mandiri</title>
 
     <!-- Icon Library -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Navbar Start-->
+    <!-- Navbar Start -->
     <nav class="navbar">
-      <a href="#" class="logo-navbar">Jed<span>X</span></a>
+      <a href="#" class="logo-navbar">alur<span>.</span></a>
       <div class="navbar-nav">
-        <a href="#">Beranda</a>
+        <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
         <a href="#course">Kelas</a>
         <a href="#contact">Kontak</a>
@@ -33,34 +34,50 @@
         <a id="hamburger-menu" href="#"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <!-- Header End -->
+    <!-- Navbar End -->
 
-    <!-- Main Start -->
+    <!-- Hero Start -->
     <section class="hero" id="home">
-      <main class="content">
-        <h1>Belajar Lebih Mudah, Tumbuh Lebih Cepat</h1>
-        <p>Platform pembelajaran yang membantu kamu belajar dengan mudah, mengembangkan keterampilan, dan mencapai potensi terbaikmu.</p>
-        <a href="" class="cta">Gabung</a>
-      </main>
-
-      <div class="hero-image">
-        <img src="/assets/hero.png" alt="" />
+      <div class="hero-copy">
+        <p class="hero-kicker">Belajar sedikit, tapi setiap hari</p>
+        <h1>Belajar mengalir, bukan berhenti di tengah jalan.</h1>
+        <p class="hero-desc">
+          Alur adalah ruang belajar mandiri untuk siapa saja yang ingin membangun kebiasaan belajar yang konsisten. Pilih satu kelas, ikuti alurnya, dan tumbuh setahap demi setahap.
+        </p>
+        <div class="hero-actions">
+          <a href="#course" class="cta">Mulai belajar</a>
+          <a href="#about" class="cta-ghost">Kenapa Alur?</a>
+        </div>
       </div>
+
+      <aside class="hero-panel" aria-label="Topik yang sedang banyak dipelajari">
+        <span class="hero-panel-label">Sedang banyak dipelajari</span>
+        <ol class="hero-ticker">
+          <li><span>Desain Produk</span><em>UI/UX</em></li>
+          <li><span>Pemrograman Web</span><em>Frontend</em></li>
+          <li><span>Menulis Kreatif</span><em>Copywriting</em></li>
+          <li><span>Fotografi</span><em>Visual</em></li>
+        </ol>
+      </aside>
     </section>
-    <!-- Main End -->
+    <!-- Hero End -->
 
     <!-- About Section Start -->
     <section class="about" id="about">
-      <h2>Tentang Kami</h2>
-      <div class="row">
-        <div class="about-img">
-          <img src="/assets/about.png" alt="" />
-        </div>
-        <div class="content">
-          <h3>Kenapa memilih JedX Learning Platform?</h3>
+      <div class="section-head">
+        <p class="section-label">Tentang Alur</p>
+        <h2>Dibangun untuk orang yang belajar sambil menjalani hidup</h2>
+      </div>
+      <div class="about-row">
+        <p class="about-lede">
+          "Kami percaya belajar yang bertahan lama bukan soal seberapa cepat kamu tamat, tapi seberapa konsisten kamu kembali."
+        </p>
+        <div class="about-body">
           <p>
-            JedX Learning Platform adalah platform pembelajaran yang dirancang untuk membantu kamu belajar dengan lebih mudah, fleksibel, dan menyenangkan. Kami menyediakan berbagai kelas dan materi untuk menambah pengetahuan serta
-            mengembangkan keterampilan sesuai minat dan kebutuhanmu. Dengan pengalaman belajar yang sederhana dan mudah dipahami, JedX hadir untuk mendukung setiap langkahmu dalam berkembang dan mencapai potensi terbaik.
+            Alur dirancang untuk membantu kamu belajar dengan lebih fleksibel dan tanpa tekanan. Setiap kelas disusun dalam langkah-langkah kecil yang bisa kamu selesaikan di sela waktu luang, ditemani mentor yang memang berpraktik di bidangnya.
+          </p>
+          <p>
+            Tidak ada target yang memaksa. Yang ada hanya alur belajar yang bisa kamu sesuaikan dengan ritme dan kebutuhanmu sendiri, sampai keterampilan itu benar-benar melekat.
           </p>
         </div>
       </div>
@@ -69,19 +86,23 @@
 
     <!-- Course Section Start -->
     <section class="course" id="course">
-      <h2>Kelas yang tersedia</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+      <div class="section-head">
+        <p class="section-label">Kelas</p>
+        <h2>Pilih kelas yang sesuai dengan arah belajarmu</h2>
+      </div>
 
-      <div class="row" id="course-list"></div>
+      <div id="course-list" class="course-list"></div>
     </section>
     <!-- Course Section End -->
 
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
-      <h2>Kontak Kami</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+      <div class="section-head">
+        <p class="section-label">Kontak</p>
+        <h2>Ada pertanyaan sebelum mulai belajar?</h2>
+      </div>
 
-      <div class="row">
+      <div class="contact-row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.585720336962!2d107.7222779402832!3d-6.940013493088898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1787874858376!5m2!1sen!2sid"
           allowfullscreen=""
@@ -90,18 +111,18 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <form action="#" id="contact-form">
           <div class="input-group">
-            <i data-feather="user"> </i>
-            <input type="text" placeholder="nama" />
+            <label for="name">Nama</label>
+            <input id="name" type="text" placeholder="Nama lengkap" />
           </div>
           <div class="input-group">
-            <i data-feather="mail"> </i>
-            <input type="text" placeholder="email" />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="nama@email.com" />
           </div>
           <div class="input-group">
-            <i data-feather="phone"> </i>
-            <input type="number" placeholder="nomor hp" />
+            <label for="phone">Nomor HP</label>
+            <input id="phone" type="tel" placeholder="08xx xxxx xxxx" />
           </div>
 
           <button type="submit" class="btn">Kirim pesan</button>
@@ -110,23 +131,22 @@
     </section>
     <!-- Contact Section End -->
 
-    <!-- Footer Section Start-->
+    <!-- Footer Section Start -->
     <footer id="footer">
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-      </div>
+      <a href="#" class="logo-navbar footer-logo">alur<span>.</span></a>
       <div class="links">
         <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
-        <a href="#course">kelas</a>
+        <a href="#course">Kelas</a>
         <a href="#contact">Kontak</a>
       </div>
-      <div>
-        <p>Created by <a href="">Mochamad Irfan Hidayat. | &copy;2026</a></p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
       </div>
+      <p class="credit">Dibuat oleh <a href="">Nama Mahasiswa</a> — redesain dari JedX Learning Platform, &copy;2026</p>
     </footer>
-    <!-- Footer Section End-->
+    <!-- Footer Section End -->
 
     <script src="script.js"></script>
   </body>
