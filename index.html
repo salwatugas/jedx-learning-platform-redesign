@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>JedX Learning Platform</title>
+
+    <!-- Icon Library -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar Start-->
+    <nav class="navbar">
+      <a href="#" class="logo-navbar">Jed<span>X</span></a>
+      <div class="navbar-nav">
+        <a href="#">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#course">Kelas</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search">
+          <i data-feather="search"></i>
+        </a>
+        <a id="hamburger-menu" href="#"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Belajar Lebih Mudah, Tumbuh Lebih Cepat</h1>
+        <p>Platform pembelajaran yang membantu kamu belajar dengan mudah, mengembangkan keterampilan, dan mencapai potensi terbaikmu.</p>
+        <a href="" class="cta">Gabung</a>
+      </main>
+
+      <div class="hero-image">
+        <img src="/assets/hero.png" alt="" />
+      </div>
+    </section>
+    <!-- Main End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <h2>Tentang Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="/assets/about.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih JedX Learning Platform?</h3>
+          <p>
+            JedX Learning Platform adalah platform pembelajaran yang dirancang untuk membantu kamu belajar dengan lebih mudah, fleksibel, dan menyenangkan. Kami menyediakan berbagai kelas dan materi untuk menambah pengetahuan serta
+            mengembangkan keterampilan sesuai minat dan kebutuhanmu. Dengan pengalaman belajar yang sederhana dan mudah dipahami, JedX hadir untuk mendukung setiap langkahmu dalam berkembang dan mencapai potensi terbaik.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Course Section Start -->
+    <section class="course" id="course">
+      <h2>Kelas yang tersedia</h2>
+      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+
+      <div class="row" id="course-list"></div>
+    </section>
+    <!-- Course Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2>Kontak Kami</h2>
+      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.585720336962!2d107.7222779402832!3d-6.940013493088898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c323777ca3a1%3A0x355eff6734ed9167!2sUniversitas%20Pendidikan%20Indonesia%20-%20Kampus%20UPI%20Cibiru!5e0!3m2!1sen!2sid!4v1787874858376!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"> </i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"> </i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"> </i>
+            <input type="number" placeholder="nomor hp" />
+          </div>
+
+          <button type="submit" class="btn">Kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start-->
+    <footer id="footer">
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#course">kelas</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div>
+        <p>Created by <a href="">Mochamad Irfan Hidayat. | &copy;2026</a></p>
+      </div>
+    </footer>
+    <!-- Footer Section End-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
